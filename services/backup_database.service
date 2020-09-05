@@ -1,0 +1,8 @@
+[Unit]
+Description=InfluxDB database backup to someothermachine
+StartLimitIntervalSec=0
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/usr/bin/python3 /home/pi/homeclimate/scripts/backup_database.py

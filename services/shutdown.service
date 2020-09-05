@@ -1,0 +1,13 @@
+[Unit]
+Description=shutdown button on pin 4
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=root
+ExecStart=/usr/bin/python3 /home/pi/homeclimate/scripts/shutdown.py
+
+[Install]
+WantedBy=multi-user.target

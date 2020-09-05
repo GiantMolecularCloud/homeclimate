@@ -1,0 +1,14 @@
+[Unit]
+Description=homeclimate TP-Link HS110 power monitoring
+After=influxdb.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=root
+ExecStart=/usr/bin/python3 /home/pi/homeclimate_v2/scripts/hs110.py
+
+[Install]
+WantedBy=multi-user.target

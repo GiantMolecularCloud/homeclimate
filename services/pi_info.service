@@ -1,0 +1,14 @@
+[Unit]
+Description=homeclimate raspberry pi monitoring
+After=influxdb.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=root
+ExecStart=/usr/bin/python3 /home/pi/homeclimate/scripts/pi_info.py
+
+[Install]
+WantedBy=multi-user.target

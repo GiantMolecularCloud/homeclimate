@@ -1,0 +1,10 @@
+[Unit]
+Description=InfluxDB database backup to MediaNAS
+
+[Timer]
+OnCalendar=*-*-* 12:00:00
+Persistent=true
+Unit=backup_database.service
+
+[Install]
+WantedBy=timers.target

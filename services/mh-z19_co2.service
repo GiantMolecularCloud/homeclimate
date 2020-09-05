@@ -1,0 +1,14 @@
+[Unit]
+Description=homeclimate co2 monitoring for mh-z19
+After=influxdb.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=root
+ExecStart=/usr/bin/python3 /home/pi/homeclimate/scripts/mh-z19_co2.py
+
+[Install]
+WantedBy=multi-user.target
