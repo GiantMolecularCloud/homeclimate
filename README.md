@@ -10,3 +10,6 @@ By now, the project has three phases:
 - V1: running locally on a Raspberry Pi 3B+ (done, superceeded by V1.5).
 - V1.5: gathering metrics with the RPi but have the database and visualization on my much more powerful home server (current status).
 - V2: use a distributed network of ESP32 microcontrollers to obtain metrics from all over the house and send them to the server (in development, prototype running).
+
+
+[![alt text](https://nicokrieger.de/projects/homeclimate/homeclimate-teaser.jpg "Homeclimate teaser")](https://nicokrieger.de/homeclimate_v1.html)
